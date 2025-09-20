@@ -9,7 +9,7 @@ export function Projects() {
       title: "E-Commerce Platform",
       description:
         "A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, and secure payments.",
-      image: "/modern-ecommerce-interface.png",
+      image: "@/public/secureFrame.JPG",
       technologies: ["React", "Node.js", "MongoDB", "Stripe"],
       liveUrl: "#",
       githubUrl: "#",

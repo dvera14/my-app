@@ -37,16 +37,12 @@ export function Hero() {
       </div>
 
       <div className="container mx-auto px-4 text-center z-10">
-        <div className="float-animation">
+        <div className="">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 text-balance">
-            Hi, I'm <span className="text-primary">Your Name</span>
+          <span className="text-primary">David Adrian Vera</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 text-balance">
-            Full Stack Developer & Space Enthusiast
-          </p>
-          <p className="text-lg text-muted-foreground mb-12 max-w-2xl mx-auto text-pretty">
-            Crafting digital experiences that are out of this world. I build modern web applications with cutting-edge
-            technologies.
+            Electrical and Artificial Intelligence Systems Engineering
           </p>
         </div>
 
@@ -56,12 +52,16 @@ export function Hero() {
             <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
           </Button>
           <div className="flex gap-4">
-            <Button variant="outline" size="icon">
+            <a href="https://github.com/dvera0504" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="icon">
               <Github className="h-4 w-4" />
-            </Button>
-            <Button variant="outline" size="icon">
+              </Button>
+            </a>
+            <a href="https://www.linkedin.com/in/david-vera05/" target="_blank" rel="noopener noreferrer">
+              <Button variant="outline" size="icon">
               <Linkedin className="h-4 w-4" />
-            </Button>
+              </Button>
+            </a>
             <Button variant="outline" size="icon">
               <Mail className="h-4 w-4" />
             </Button>
