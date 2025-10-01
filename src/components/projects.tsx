@@ -27,7 +27,7 @@ export function Projects() {
       githubUrl: "https://github.com/dvera0504/SecureFrame",
     },  
     {
-      id:"taskmanager",
+      id:"quadcopterdrone",
       title: "Quadcopter Drone",
       description:
         "RC Quadcopter drone built from scratch using Arduino(Teensy) and various electronic components. Features include remote control, altitude hold, and basic autonomous flight capabilities.",
