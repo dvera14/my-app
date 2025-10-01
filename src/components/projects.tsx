@@ -17,13 +17,13 @@ export function Projects() {
       githubUrl: "https://github.com/dvera0504/SecureFrame",
     },
     {
-      id:"secureframe",
+      id:"thermalroad",
       title: "Thermal Road User Detection System",
       description:
         "Developed as part of the Automotive Innovation Challenge hosted by Western University Engineering Faculty and sponsored by General Motors.\n\nReal-time road user detection system using thermal imaging technology, specifically designed to improve pedestrian and cyclist safety in low-visibility conditions by detecting and classifying pedestrians, bicycles, and vehicles.\n\nImplemented Faster R-CNN with ResNet50-FPN backbone, achieving 87% mean average precision and high detection accuracy across different classes.",
       image: "/thermalroad.JPG",
       technologies: ["Python", "PyTorch", "Computer Vision", "Raspberry PI"],
-      liveUrl: "https://drive.google.com/file/d/1KYz3xVee7ywdgHGF9lbrjUA0VVaj2mlF/view",
+      liveUrl: "",
       githubUrl: "https://github.com/dvera0504/SecureFrame",
     },  
     {
