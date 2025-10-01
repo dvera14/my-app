@@ -10,7 +10,7 @@ export function About() {
         </div>
         <div className="text-left min-h-[24rem] w-full mb-8 mt-8 bg-black/40 border-2 border-[#ffffff] p-8 rounded-xl max-w-5xl mx-auto" style={{ fontFamily: "Inter, 'Segoe UI', Arial, sans-serif" }}>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty">
-            I am an engineering student specializing in Electrical and AI Systems Engineering, with a keen interest in developing integrated hardware and software solutions. My academic and project experience has equipped me with a strong foundation in both technical and analytical skills.
+            I am an Engineering student specializing in Electrical and AI Systems Engineering, with a keen interest in developing integrated hardware and software solutions. My academic and project experience has equipped me with a strong foundation in both technical and analytical skills.
           </p>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty mt-6">
             I have contributed to multidisciplinary teams through active participation in the Western Cyber Society and the Western Automotive Challenge, focusing on cybersecurity applications and embedded road user detection systems for autonomous vehicles. Additionally, I have mentored peers in CAD design software (SolidWorks and Onshape), supporting the advancement of engineering projects and fostering collaborative learning environments.

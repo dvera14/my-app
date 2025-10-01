@@ -2,42 +2,57 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
 import { ExternalLink, Github } from "lucide-react"
+import { id } from "date-fns/locale"
 
 export function Projects() {
   const projects = [
     {
-      title: "E-Commerce Platform",
+      id:"secureframe",
+      title: "AI-Powered Video Encryption App",
       description:
-        "A full-stack e-commerce solution with React, Node.js, and Stripe integration. Features include user authentication, product management, and secure payments.",
-      image: "@/public/secureFrame.JPG",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
-      liveUrl: "#",
-      githubUrl: "#",
+        "Developed SecureFrame, an AI-powered video encryption application, as part of the Western Cyber Society (Oct 2024 – Apr 2025). Contributed to full-stack development by implementing YOLO object detection with OpenCV for video processing and securing sensitive content with AES encryption. Awarded first place in Cybersecurity at the Toronto Tech Expo hosted by Slalom Consulting.",
+      image: "/secureFrame.JPG",
+      technologies: ["Python", "React", "YOLO", "Open CV", "Flask", "AES"],
+      liveUrl: "https://drive.google.com/file/d/1KYz3xVee7ywdgHGF9lbrjUA0VVaj2mlF/view",
+      githubUrl: "https://github.com/dvera0504/SecureFrame",
     },
     {
-      title: "Task Management App",
+      id:"secureframe",
+      title: "Thermal Road User Detection System",
       description:
-        "A collaborative task management application with real-time updates, drag-and-drop functionality, and team collaboration features.",
+        "Developed as part of the Automotive Innovation Challenge hosted by Western University Engineering Faculty and sponsored by General Motors.\n\nReal-time road user detection system using thermal imaging technology, specifically designed to improve pedestrian and cyclist safety in low-visibility conditions by detecting and classifying pedestrians, bicycles, and vehicles.\n\nImplemented Faster R-CNN with ResNet50-FPN backbone, achieving 87% mean average precision and high detection accuracy across different classes.",
+      image: "/thermalroad.JPG",
+      technologies: ["Python", "PyTorch", "Computer Vision", "Raspberry PI"],
+      liveUrl: "https://drive.google.com/file/d/1KYz3xVee7ywdgHGF9lbrjUA0VVaj2mlF/view",
+      githubUrl: "https://github.com/dvera0504/SecureFrame",
+    },  
+    {
+      id:"taskmanager",
+      title: "Quadcopter Drone",
+      description:
+        "RC Quadcopter drone built from scratch using Arduino(Teensy) and various electronic components. Features include remote control, altitude hold, and basic autonomous flight capabilities.",
       image: "/task-management-dashboard.png",
       technologies: ["Next.js", "TypeScript", "Prisma", "Socket.io"],
       liveUrl: "#",
       githubUrl: "#",
     },
     {
-      title: "Weather Dashboard",
+      id:"weatherdashboard",
+      title: "Financial News App",
       description:
-        "A beautiful weather application with location-based forecasts, interactive maps, and detailed weather analytics.",
-      image: "/preview/project4.png",
-      technologies: ["React", "Chart.js", "OpenWeather API", "Tailwind"],
+      "This project integrates multiple data sources to collect, analyze, and present real-time information about specific stocks. The goal is to build a comprehensive system that combines both market data and social sentiment to provide a richer picture of stock performance and public perception.",
+      image: "/financialproj.png",
+      technologies: ["Python", "Docker", "Pytest"],
       liveUrl: "#",
       githubUrl: "#",
     },
     {
+      id:"portfolio",
       title: "Portfolio Website",
       description:
         "A responsive portfolio website showcasing projects and skills with smooth animations and modern design.",
-      image: "/modern-portfolio-website.png",
-      technologies: ["Next.js", "Framer Motion", "Tailwind CSS"],
+      image: "/homepage.png",
+      technologies: ["Next.js", "React", "Tailwind CSS"],
       liveUrl: "#",
       githubUrl: "#",
     },
@@ -55,15 +70,16 @@ export function Projects() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
+            
             <Card
               key={index}
               className="bg-card border-border hover:border-primary/50 transition-all duration-300 group"
             >
               <div className="relative overflow-hidden rounded-t-lg">
                 <img
-                  src={project.image || "/placeholder.svg"}
+                  src={project.image || "/placeholder.svg"} 
                   alt={project.title}
-                  className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                  className="w-full h-48 object-cover object-[center_15%] group-hover:scale-105 transition-transform duration-300"
                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
               </div>
@@ -80,21 +96,28 @@ export function Projects() {
                   ))}
                 </div>
                 <div className="flex gap-2">
-                  <Button size="sm" asChild>
-                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                      <ExternalLink className="h-4 w-4 mr-2" />
-                      Live Demo
-                    </a>
-                  </Button>
-                  <Button size="sm" variant="outline" asChild>
-                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                      <Github className="h-4 w-4 mr-2" />
-                      Code
-                    </a>
-                  </Button>
+                  {/* Render Live Demo button only if liveUrl is available */}
+            {project.liveUrl && project.liveUrl !== "#" && (
+              <Button size="sm" asChild>
+                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                  <ExternalLink className="h-4 w-4 mr-2" />
+                  Live Demo
+                </a>
+              </Button>
+            )}
+            {/* Render Code button only if githubUrl is available */}
+            {project.githubUrl && project.githubUrl !== "#" && (
+              <Button size="sm" variant="outline" asChild>
+                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                  <Github className="h-4 w-4 mr-2" />
+                  Code
+                </a>
+              </Button>
+            )}
                 </div>
               </CardContent>
             </Card>
+      
           ))}
         </div>
       </div>

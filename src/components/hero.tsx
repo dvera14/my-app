@@ -52,7 +52,7 @@ export function Hero() {
             <ArrowDown className="ml-2 h-4 w-4 group-hover:translate-y-1 transition-transform" />
           </Button>
           <div className="flex gap-4">
-            <a href="https://github.com/dvera0504" target="_blank" rel="noopener noreferrer">
+            <a href="https://github.com/dvera14" target="_blank" rel="noopener noreferrer">
               <Button variant="outline" size="icon">
               <Github className="h-4 w-4" />
               </Button>
