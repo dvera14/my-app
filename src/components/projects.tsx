@@ -24,7 +24,7 @@ export function Projects() {
       image: "/thermalroad.JPG",
       technologies: ["Python", "PyTorch", "Computer Vision", "Raspberry PI"],
       liveUrl: "",
-      githubUrl: "https://github.com/dvera0504/SecureFrame",
+      githubUrl: "",
     },  
     {
       id:"quadcopterdrone",
@@ -32,7 +32,7 @@ export function Projects() {
       description:
         "RC Quadcopter drone built from scratch using Arduino(Teensy) and various electronic components. Features include remote control, altitude hold, and basic autonomous flight capabilities.",
       image: "/task-management-dashboard.png",
-      technologies: ["Next.js", "TypeScript", "Prisma", "Socket.io"],
+      technologies: ["C++", "PID Control", "Signal Processing", "Aeronautics"],
       liveUrl: "#",
       githubUrl: "#",
     },

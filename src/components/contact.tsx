@@ -56,11 +56,11 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="font-medium">Email</p>
-                  <p className="text-muted-foreground">your.email@example.com</p>
+                  <p className="text-muted-foreground">dvera3@uwo.ca</p>
                 </div>
               </div>
 
-              <div className="flex items-center gap-4">
+              {/*<div className="flex items-center gap-4">
                 <div className="p-3 bg-primary/10 rounded-lg">
                   <Phone className="h-5 w-5 text-primary" />
                 </div>
@@ -69,6 +69,7 @@ export function Contact() {
                   <p className="text-muted-foreground">+1 (555) 123-4567</p>
                 </div>
               </div>
+              */}
 
               <div className="flex items-center gap-4">
                 <div className="p-3 bg-primary/10 rounded-lg">
@@ -76,7 +77,9 @@ export function Contact() {
                 </div>
                 <div>
                   <p className="font-medium">Location</p>
-                  <p className="text-muted-foreground">Your City, Country</p>
+                  <p className="text-muted-foreground">London, Ontario</p>
+                  <p className="text-muted-foreground">Toronto, Ontario</p>
+
                 </div>
               </div>
             </div>
