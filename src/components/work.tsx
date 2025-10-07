@@ -11,7 +11,7 @@ type Experience = {
 const experiences: Experience[] = [
   {
     role: "Full Stack Developer",
-    logo: "/",
+    logo: "/wcs.ico",
     company: "Western Cyber Society",
     duration: "Oct 2024 - March 2025",
     description: [
@@ -58,15 +58,15 @@ const Work: React.FC = () => (
             className="bg-gray-800 border border-gray-700 rounded-xl p-6 shadow-lg"
           >
             <div className="flex justify-between items-center mb-4">
-              <div className="flex items-center gap-4">
-                <h3 className="text-2xl font-semibold">{exp.role}</h3>
+                <div className="flex items-center gap-4">
                 <img
                   src={exp.logo}
                   alt={`${exp.company} logo`}
                   className="h-10 w-10 object-contain"
                 />
+                <h3 className="text-2xl font-semibold">{exp.role}</h3>
                 
-              </div>
+                </div>
               <span className="text-sm text-gray-400">{exp.duration}</span>
             </div>
             <p className="text-lg font-bold mb-2">{exp.company}</p>
