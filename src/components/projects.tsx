@@ -16,16 +16,7 @@ export function Projects() {
       liveUrl: "https://drive.google.com/file/d/1KYz3xVee7ywdgHGF9lbrjUA0VVaj2mlF/view",
       githubUrl: "https://github.com/dvera14/SecureFrame",
     },
-    {
-      id:"thermalroad",
-      title: "Thermal Road User Detection System",
-      description:
-        "Developed as part of the Automotive Innovation Challenge hosted by Western University Engineering Faculty and sponsored by General Motors.\n\nReal-time road user detection system using thermal imaging technology, specifically designed to improve pedestrian and cyclist safety in low-visibility conditions by detecting and classifying pedestrians, bicycles, and vehicles.\n\nImplemented Faster R-CNN with ResNet50-FPN backbone, achieving 87% mean average precision and high detection accuracy across different classes.",
-      image: "/thermalroad.JPG",
-      technologies: ["Python", "PyTorch", "Computer Vision", "Raspberry PI"],
-      liveUrl: "",
-      githubUrl: "",
-    },  
+      
     {
       id:"quadcopterdrone",
       title: "Quadcopter Drone",
@@ -35,6 +26,16 @@ export function Projects() {
       technologies: ["C++", "PID Control", "Signal Processing", "Aeronautics"],
       liveUrl: "#",
       githubUrl: "#",
+    },
+    {
+      id:"FinancialApp",
+      title: "Unfified Stock Analyzer",
+      description:
+        "Built a platform that brings together data from Reddit, X (Twitter), Alpha Vantage, and Twelve Data to analyze real-time stock trends and market sentiment. Containerized the project with Docker for easy deployment and consistent environments, and designed modular API handlers with robust testing using pytest",
+      image: "/financialproj.png",
+      technologies: ["Python", "REST APIs", "Docker", "pytest"],
+      liveUrl: "",
+      githubUrl: "https://github.com/dvera14/Financial-News-Data-Showcase",
     },
     {
       id:"portfolio",

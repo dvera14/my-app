@@ -123,7 +123,7 @@ export function Contact() {
         </div>
 
         <div className="text-center mt-16 pt-8 border-t border-border">
-          <p className="text-muted-foreground">© 2024 Your Name. Built with Next.js and Tailwind CSS.</p>
+          <p className="text-muted-foreground">© 2025 David Vera. Built with Next.js and Tailwind CSS.</p>
         </div>
       </div>
     </section>
