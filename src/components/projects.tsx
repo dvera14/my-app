@@ -14,7 +14,7 @@ export function Projects() {
       image: "/secureFrame.JPG",
       technologies: ["Python", "React", "YOLO", "Open CV", "Flask", "AES"],
       liveUrl: "https://drive.google.com/file/d/1KYz3xVee7ywdgHGF9lbrjUA0VVaj2mlF/view",
-      githubUrl: "https://github.com/dvera0504/SecureFrame",
+      githubUrl: "https://github.com/dvera14/SecureFrame",
     },
     {
       id:"thermalroad",
@@ -30,19 +30,9 @@ export function Projects() {
       id:"quadcopterdrone",
       title: "Quadcopter Drone",
       description:
-        "RC Quadcopter drone built from scratch using Arduino(Teensy) and various electronic components. Features include remote control, altitude hold, and basic autonomous flight capabilities.",
-      image: "/task-management-dashboard.png",
+        "Currently in the process of building an RC Quadcopter drone built from scratch using Arduino(Teensy) and various electronic components. Features include remote control, altitude hold, and basic autonomous flight capabilities.",
+      image: "/quadcopter.png",
       technologies: ["C++", "PID Control", "Signal Processing", "Aeronautics"],
-      liveUrl: "#",
-      githubUrl: "#",
-    },
-    {
-      id:"weatherdashboard",
-      title: "Financial News App",
-      description:
-      "This project integrates multiple data sources to collect, analyze, and present real-time information about specific stocks. The goal is to build a comprehensive system that combines both market data and social sentiment to provide a richer picture of stock performance and public perception.",
-      image: "/financialproj.png",
-      technologies: ["Python", "Docker", "Pytest"],
       liveUrl: "#",
       githubUrl: "#",
     },

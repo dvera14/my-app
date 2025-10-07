@@ -24,7 +24,7 @@ const experiences: Experience[] = [
   },
   {
     role: "Business Owner",
-    logo: "/mississauga.png",
+    logo: "/mississauga.jpg",
     company: "Clarkson Car Detailing",
     duration: "June 2022 - 2024",
     description: [

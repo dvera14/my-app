@@ -46,7 +46,10 @@ export function Navigation() {
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4 py-4">
         <div className="flex justify-between items-center">
-          <div className="text-xl font-bold text-primary">Portfolio</div>
+            <div className="flex items-center">
+            <div className="text-xl font-bold text-primary">Portfolio</div>
+            <img src="/headshot.jpg" alt="Logo" className="h-14 w-14 ml-4 rounded-full" />
+            </div>
           <div className="hidden md:flex space-x-1">
             {navItems.map((item) => (
               <Button
