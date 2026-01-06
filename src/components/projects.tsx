@@ -28,17 +28,18 @@ export function Projects() {
       githubUrl: "#",
     },
     {
-      id:"FinancialApp",
-      title: "Unfified Stock Analyzer",
+      id: "ml-rps-game",
+      title: "Machine Learning Rock Paper Scissors Game",
       description:
-        "Built a platform that brings together data from Reddit, X (Twitter), Alpha Vantage, and Twelve Data to analyze real-time stock trends and market sentiment. Containerized the project with Docker for easy deployment and consistent environments, and designed modular API handlers with robust testing using pytest",
-      image: "/financialproj.png",
-      technologies: ["Python", "REST APIs", "Docker", "pytest"],
+        "Developed a Rock Paper Scissors game powered by machine learning. The game uses a convolutional neural network (CNN) to recognize hand gestures via a webcam and predict the player's move in real-time. Built with Python, PyTorch, and OpenCV.",
+      image: "/rps.png",
+      technologies: ["Python", "PyTorch", "OpenCV"],
       liveUrl: "",
-      githubUrl: "https://github.com/dvera14/Financial-News-Data-Showcase",
+      githubUrl: "https://github.com/dvera14/RPS-1",
     },
+
     {
-      id:"portfolio",
+      id: "portfolio",
       title: "Portfolio Website",
       description:
         "A responsive portfolio website showcasing projects and skills with smooth animations and modern design.",
