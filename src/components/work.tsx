@@ -11,7 +11,7 @@ type Experience = {
 const experiences: Experience[] = [
   {
     role: "Full Stack Developer",
-    logo: "/wcs.ico",
+    logo: "wcs.ico",
     company: "Western Cyber Society",
     duration: "Oct 2024 - March 2025",
     description: [
@@ -23,8 +23,19 @@ const experiences: Experience[] = [
     ],
   },
   {
+    role: "Electrical Subteam Lead",
+    logo: "wad.png",
+    company: "Western Aero Design Team",
+    duration: "September 2025 - Present",
+    description: [
+      "Designing and fabricating a custom 4-axis CNC hot wire foam cutter for complex aerodynamic wing profiles",
+      "Integrating NEMA stepper motors with Arduino and Ramps 1.4 to achieve precise multi-axis motion control",
+      "Developing the electrical subsystem, including power distribution and limit switch integration, ensuring safe and reliable operation during long cutting cycles",
+    ],
+  },
+  {
     role: "Business Owner",
-    logo: "/mississauga.jpg",
+    logo: "mississauga.jpg",
     company: "Clarkson Car Detailing",
     duration: "June 2022 - 2024",
     description: [
@@ -32,17 +43,6 @@ const experiences: Experience[] = [
       "Drafted a detailed business plan and presenting to the city for approval",
       "Attending weekly business meeting with the city of Mississauga as part of the program",
       "Gave 10% of profits to the Credit Valley Conservation Area",
-    ],
-  },
-  {
-    role: "Mentor for Foundations of Engineering Practice",
-    logo: "/western.png",
-    company: "Western Engineering",
-    duration: "Sept 2023 - April 2024",
-    description: [
-      "Selected by Professor to provide mentorship in CAD design software such as SolidWorks and OnShape",
-      "Assisted students with designing and refining projects, offering technical guidance and constructive feedback.",
-      "Supported the successful completion of student projects through hands on demonstrations",
     ],
   },
 ];
