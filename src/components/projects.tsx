@@ -7,7 +7,7 @@ import { id } from "date-fns/locale"
 export function Projects() {
   const projects = [
     {
-      id:"secureframe",
+      id: "secureframe",
       title: "AI-Powered Video Encryption App",
       description:
         "Developed SecureFrame, an AI-powered video encryption application, as part of the Western Cyber Society (Oct 2024 – Apr 2025). Contributed to full-stack development by implementing YOLO object detection with OpenCV for video processing and securing sensitive content with AES encryption. Awarded first place in Cybersecurity at the Toronto Tech Expo hosted by Slalom Consulting.",
@@ -16,14 +16,15 @@ export function Projects() {
       liveUrl: "https://drive.google.com/file/d/1KYz3xVee7ywdgHGF9lbrjUA0VVaj2mlF/view",
       githubUrl: "https://github.com/dvera14/SecureFrame",
     },
-      
+
     {
-      id:"quadcopterdrone",
+      id: "quadcopterdrone",
       title: "Quadcopter Drone",
       description:
         "Currently in the process of building an RC Quadcopter drone built from scratch using Arduino(Teensy) and various electronic components. Features include remote control, altitude hold, and basic autonomous flight capabilities.",
-      image: "/quadcopter.png",
+      image: "/drone.jpeg",
       technologies: ["C++", "PID Control", "Signal Processing", "Aeronautics"],
+      imageClassName: "object-contain bg-muted",
       liveUrl: "#",
       githubUrl: "#",
     },
@@ -62,16 +63,19 @@ export function Projects() {
 
         <div className="grid md:grid-cols-2 gap-8">
           {projects.map((project, index) => (
-            
+
             <Card
               key={index}
               className="bg-card border-border hover:border-primary/50 transition-all duration-300 group"
             >
               <div className="relative overflow-hidden rounded-t-lg">
                 <img
-                  src={project.image || "/placeholder.svg"} 
+                  src={project.image || "/placeholder.svg"}
                   alt={project.title}
-                  className="w-full h-48 object-cover object-[center_15%] group-hover:scale-105 transition-transform duration-300"
+                  className={`w-full h-48 group-hover:scale-105 transition-transform duration-300 ${
+                    // @ts-ignore - Adding custom class property safely
+                    project.imageClassName || "object-cover object-[center_15%]"
+                    }`}
                 />
                 <div className="absolute inset-0 bg-black/20 group-hover:bg-black/10 transition-colors duration-300" />
               </div>
@@ -89,27 +93,27 @@ export function Projects() {
                 </div>
                 <div className="flex gap-2">
                   {/* Render Live Demo button only if liveUrl is available */}
-            {project.liveUrl && project.liveUrl !== "#" && (
-              <Button size="sm" asChild>
-                <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                  <ExternalLink className="h-4 w-4 mr-2" />
-                  Live Demo
-                </a>
-              </Button>
-            )}
-            {/* Render Code button only if githubUrl is available */}
-            {project.githubUrl && project.githubUrl !== "#" && (
-              <Button size="sm" variant="outline" asChild>
-                <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                  <Github className="h-4 w-4 mr-2" />
-                  Code
-                </a>
-              </Button>
-            )}
+                  {project.liveUrl && project.liveUrl !== "#" && (
+                    <Button size="sm" asChild>
+                      <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                        <ExternalLink className="h-4 w-4 mr-2" />
+                        Live Demo
+                      </a>
+                    </Button>
+                  )}
+                  {/* Render Code button only if githubUrl is available */}
+                  {project.githubUrl && project.githubUrl !== "#" && (
+                    <Button size="sm" variant="outline" asChild>
+                      <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                        <Github className="h-4 w-4 mr-2" />
+                        Code
+                      </a>
+                    </Button>
+                  )}
                 </div>
               </CardContent>
             </Card>
-      
+
           ))}
         </div>
       </div>
